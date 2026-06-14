@@ -18,7 +18,7 @@ body{
 }
 
 .header{
-    background-color: transparent;
+    background-color: #FAFAFA;
     color: ;
     padding: 1rem 0;
     position: fixed;
@@ -111,6 +111,7 @@ body{
 }
 
 .hero{
+    background-color: #FAFAFA;
     min-height:calc(100vh - 100px);
     display: flex;
     align-items: center;
@@ -191,4 +192,40 @@ body{
 
 .footer-section h4{
     color: white;
+}
+
+@media (max-width: 768px) {
+    .hero-content h2{
+        font-size: 2.5rem;
+    }
+
+    .hero-button{
+        width: 80%;
+        text-align: center;
+    }
+
+    .hero-content{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .navbar{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content{
+        font-size: 2rem;
+    }
+
+    .container{
+        padding: 0 15px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
