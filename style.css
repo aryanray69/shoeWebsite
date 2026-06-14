@@ -18,8 +18,7 @@ body{
 }
 
 .header{
-    background-color: #FAFAFA;
-    color: ;
+    background-color: #FFFAFA;
     padding: 1rem 0;
     position: fixed;
     top: 0;
@@ -111,7 +110,7 @@ body{
 }
 
 .hero{
-    background-color: #FAFAFA;
+    background-color: #FFFAFA;
     min-height:calc(100vh - 100px);
     display: flex;
     align-items: center;
@@ -179,7 +178,7 @@ body{
 .footer{
     background-color: #FF8807;
     color: white;
-    padding: 1.3rem 1rem;
+    padding: 1.52rem 1rem;
 }
 
 .footer-content{
