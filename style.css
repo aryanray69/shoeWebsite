@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: transparent;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.header{
+    background-color: transparent;
+    color: ;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1{
+    color: #FF8807;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.seven-heading{
+    color: #0638FA;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-links a{
+    color: #949BA0;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover{
+    background-color: rgba(77, 3, 3, 0.1);
+    cursor: pointer;
+}
+
+.nav-right{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.nav-right input{
+    width: 200px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: border-color 0.3s ease;
+}
+
+.nav-right input:focus{
+    outline: none;
+    border-color: #FF8807;
+}
+
+.nav-right a{
+    color:#949BA0;
+    text-decoration: none;
+    /* border: 1px solid #7a7a7a; */
+    border-radius: 5px;
+}
+
+.profilee img{
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid red; */
+    border-radius: 50px;
+    object-fit:cover;
+}
+
+.cart-btn img{
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    object-fit: cover;
+}
