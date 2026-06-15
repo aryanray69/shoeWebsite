@@ -181,6 +181,7 @@ body{
     padding: 1.52rem 1rem;
 }
 
+
 .footer-content{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
@@ -195,6 +196,15 @@ body{
 
 /* 2nd page */
 
+.hero-second{
+    background-color: white;
+    min-height:calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10rem;
+}
 .main-image img{
     width: 100%;
     height: 400px;
@@ -305,8 +315,12 @@ body{
     transform: translateY(-2px);
 }
 
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .footer-image{
-    background-color: #FFFAFA;
     color: white;
 } 
 
@@ -323,6 +337,139 @@ body{
     border-radius: 10px;
     outline: 1px solid #ddd;
 }
+
+.left-container{
+    width: 600px;
+    height: 500px;
+}
+
+.left-head{
+    color:#4F5358;
+    display: flex;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.cart-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td{
+    padding: 15px;
+    text-align: left;
+}
+
+.cart-table th{
+    color:#4F5358;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table td{
+    color:#263238;
+}
+
+.right-container{
+    width: 400px;
+    height: 300px;
+}
+
+.card{
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 0 25px;
+    background: white;
+    color: #263238;
+}
+
+.card p{
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.card input{
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-left: -5px;
+}
+
+.apply{
+    width: 40%;
+    padding: 12px 5px;
+    border: none;
+    border-radius: 10px;
+    background: #2f80ed;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.card table{
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.card table td{
+    padding: 10px 0;
+    color: #4F5358;
+}
+
+.card table td:last-child{
+    text-align: right;
+    font-weight: 600;
+}
+
+.total-row td{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #263238;
+}
+
+.pay{
+    width: 100%;
+    margin-top: 25px;
+    padding: 18px;
+    border: none;
+    border-radius: 15px;
+    background: #F9A23B;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.payment-title img{
+    width: 80px;
+    height: auto;
+}
+
+.arrow-back{
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: transparent;
+}
+
+.continue-shop a{
+    text-decoration: none;
+    color: #4F5358;
+    font-weight: bold;
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
+
+.continue-shop a:hover{
+    color: #FF8807;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .hero-content h2{
         font-size: 2.5rem;
