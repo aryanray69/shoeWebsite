@@ -193,6 +193,136 @@ body{
     color: white;
 }
 
+/* 2nd page */
+
+.main-image img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 200px;
+}
+
+.main-text h3{
+    color: #263238;
+    font-size: 2.5rem;
+    text-align: left;
+    line-height: 1.2;
+    margin-top: 170px;
+    margin-bottom: 10px;
+}
+
+.main-text .des{
+    color:#4F5358;
+    text-align: left;
+}
+
+.price-discount{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    /* border: 1px solid black */
+}
+
+.price{
+    width: 40%;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: #0038FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F5FF;
+    /* border: 1px solid red; */
+    padding: 7px auto;
+}
+
+.discount h4{
+    color: rgba(44, 198, 44, 0.943);
+    text-align: left;
+    margin-left: -150px;
+    
+}
+.discount p{
+    color: #4F5358;
+    text-align: left;
+    margin-left: -150px;
+    line-height: 1;
+}
+
+.quantity-cart{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.quantity{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #F3F5FF;
+    padding: 15px 10px;
+    outline: none;
+}
+
+.quantity select{
+    border: none;
+}
+
+
+.cart-button{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding: 10px 10px;
+    text-decoration: none;
+    background-color: #FF8807;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: -210px;
+    transition: transform 0.3s ease;
+}
+
+.cart-button a{
+    text-decoration: none;
+    color: white;
+   
+}
+
+.cart-button:hover{
+    background-color: #7a7a7a;
+    transform: translateY(-2px);
+}
+
+.footer-image{
+    background-color: #FFFAFA;
+    color: white;
+} 
+
+.footer-image-content{
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer-image-section img{
+    height: 150px;
+    width: auto;
+    border-radius: 10px;
+    outline: 1px solid #ddd;
+}
 @media (max-width: 768px) {
     .hero-content h2{
         font-size: 2.5rem;
