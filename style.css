@@ -20,7 +20,7 @@ body{
 .header{
     background-color: #FFFAFA;
     padding: 1rem 0;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -193,8 +193,6 @@ body{
 .footer-section h4{
     color: white;
 }
-
-/* 2nd page */
 
 .hero-second{
     background-color: white;
@@ -470,38 +468,219 @@ body{
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .hero-content h2{
-        font-size: 2.5rem;
-    }
 
-    .hero-button{
-        width: 80%;
-        text-align: center;
-    }
-
-    .hero-content{
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .navbar{
-        flex-direction: column;
-        gap: 1rem;
-    }
+.checkout-page{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid: 60px;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 40px;
+    gap: 2rem;
 }
 
-@media (max-width: 480px) {
-    .hero-content{
-        font-size: 2rem;
-    }
-
-    .container{
-        padding: 0 15px;
-    }
-
-    .nav-links{
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+.check-heading p{
+    color: #A0A7AF;
+    font-size: 1rem;
+    margin-bottom: 30px;
 }
+
+.contact-heading p,
+.payment p{
+    color:#263238;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-heading label{
+    display: block;
+    color: #4F5358;
+    margin-bottom: 4px;
+}
+
+.contact-heading input{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.payment-card{
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.payment-options{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.payment-options p{
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px 25px;
+    color: #4F5358;
+    cursor: pointer;
+}
+
+.payment-options p:first-child{
+    border: 2px solid #FF8807;
+    color: #FF8807;
+}
+
+.card-details,
+.expiry,
+.cvv,
+.country,
+.zip{
+    margin-bottom: 15px;
+}
+
+.card-details p,
+.expiry-cvv p,
+.country-zip p,
+.card-check p{
+    color:#263238;
+}
+.card-details input{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.expiry-cvv,
+.country-zip{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.expiry input,
+.cvv input,
+.zip input{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.country select{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.order-head-check p{
+    font-size:2.5rem;
+    font-weight:700;
+    color:#263238;
+    text-align:left;
+    margin-bottom:20px;
+}
+
+.card-check{
+    width: 100%;
+    border:1px solid #ddd;
+    border-radius:20px;
+    padding:25px;
+    background:#fff;
+}
+
+.card-check .coupon-row input{
+    width: 58%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.apply-check{
+    width: 38%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #2F80ED;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card-check .coupon-row{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.order-summary table{
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+}
+
+.order-summary td{
+    padding: 12px 0;
+    color: #4F5358;
+}
+
+.order-summary tr{
+    height: 45px;
+}
+
+.order-summary td:last-child{
+    text-align: right;
+    font-weight: bold;
+}
+
+.total-row td{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #263238;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.pay-check{
+    width: 100%;
+    padding: 20px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 15px;
+    background: #F9A23B;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pay-check:hover{
+    background-color: #e68a00;
+    transform: translateY(-2px);
+}
+
+.payment-title-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.payment-title-check img{
+    width: 80px;
+    height: auto;
+}
+
+.mainpage {
+    position: relative;  
+    height: 100vh;       
+    overflow-y: scroll;  
+}
+
